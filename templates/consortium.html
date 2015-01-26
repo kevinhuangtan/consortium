@@ -23,12 +23,12 @@
 	$(document).ready(function(){
 		var i = 0
 		while ( i < 50){
-		setInterval(function () {changeColor()}, 500);
+		setInterval(function () {changeColor()}, 300);
 		 i++;
 		}
 		
 		
-		$('.main').delay(3000).fadeOut(500);
+		$('.main').delay(2000).fadeOut(500);
 		var j = 0;
 		$(window).scroll(function(){
 
@@ -73,6 +73,7 @@
 <p style="margin-top: 3em;">Blogs Ranked In Order of Best to Worst of the Week</p>
 <div class="recent-blogs">
 	<ol>
+	<li class="blog">Steven: <span class="blog-name">{{s_title}}</span>, <span class="date">{{s_date}}</span></li>
 	<li class="blog">Franklin: <span class="blog-name">{{f_title}}</span>, <span class="date">{{f_date}}</span></li>
 	<li class="blog">Kevin: <span class="blog-name">{{k_title}}</span>, <span class="date">{{k_date}}</span></li>
 	<li class="blog">Jonathan: <span class="blog-name">{{j_title}}</span>, <span class="date">{{j_date}}</span></li>
@@ -80,7 +81,6 @@
 	<li class="blog">Thomas: Not available cuz he's a scrub</li>
 	<li class="blog">Koop: Not available cuz he's a scrub</li>
 	<li class="blog">Pat: Not available cuz he's a scrub</li>
-	<li class="blog">Steven: Not available cuz he's a scrub</li>
 	</ol>
 </div>
 

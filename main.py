@@ -8,6 +8,15 @@ app.debug = True
 @app.route('/')
 def hello_world():
 
+	# steven
+	req = urllib2.Request('https://kangexpress.wordpress.com', headers={'User-Agent' : "Magic Browser"}) 
+	con = urllib2.urlopen( req )
+	soup=BeautifulSoup(con.read())
+	s_title = soup.findAll('h1')[1].a.string
+	s_date = soup.time.string
+	print s_title
+	print s_date
+
 	# frank
 	req = urllib2.Request('http://www.frankjwu.com', headers={'User-Agent' : "Magic Browser"}) 
 	con = urllib2.urlopen( req )
@@ -35,7 +44,7 @@ def hello_world():
 	# print kt_date
 
 
-	return render_template('consortium.html', f_title = f_title, f_date = f_date, j_title = j_title, j_date =j_date, k_title =k_title, k_date = k_date)
+	return render_template('consortium.html', f_title = f_title, f_date = f_date, j_title = j_title, j_date =j_date, k_title =k_title, k_date = k_date, s_title=s_title, s_date=s_date)
 
 if __name__ == '__main__':
     app.run()
