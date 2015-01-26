@@ -22,6 +22,7 @@ body{
 }
 .title p{
 	margin: 0;
+	font-variant: small-caps;
 }
 .main{
 	z-index: 1;
