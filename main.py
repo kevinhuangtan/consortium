@@ -39,7 +39,11 @@ def hello_world():
 	soup=BeautifulSoup(con.read())
 
 	k_date = soup.find_all("p")[-1].string
-	k_title = soup.find_all("div")[-2].find_all("h1")[-1].string
+	if (len(soup.find_all("div")[-2].find_all("h1"))>0):
+		k_title = soup.find_all("div")[-2].find_all("h1")[-1].string
+	else:
+		k_title = ""
+
 	# print kt_title
 	# print kt_date
 
