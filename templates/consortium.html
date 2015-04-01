@@ -28,7 +28,7 @@
 		}
 		
 		
-		$('.main').delay(2000).fadeOut(500);
+		$('.main').delay(500).fadeOut(100);
 		var j = 0;
 		$(window).scroll(function(){
 
@@ -63,7 +63,7 @@
 <a href="https://kangexpress.wordpress.com"> <div class="person stevie"><p class="name">Stevie</p></div></a>
 <div class="person koop"><p class="name">KOOP</p></div>
 
-<div class="person donnie"><p class="name">DONNIE</p></div>
+<a href="http://donaldwoodson.tumblr.com"><div class="person donnie"><p class="name">DONNIE</p></div></a>
 <div class="person yarboff"><p class="name">Thomas Yarboff</p></div>
 <a href="http://www.frankjwu.com"><div class="person franklin"><p class="name">Franklin</p></div></a>
 <div class="person pat"><p class="name">The CEID Blog</p></div> 
@@ -73,14 +73,19 @@
 <p style="margin-top: 3em;">Blogs Ranked In Order of Best to Worst of the Week</p>
 <div class="recent-blogs">
 	<ol>
-		<li class="blog">Jonathan: <span class="blog-name">{{j_title}}</span>, <span class="date">{{j_date}}</span></li>
-	<li class="blog">Kevin: <span class="blog-name">{{k_title}}</span>, <span class="date">{{k_date}}</span></li>
+
+	<li class="blog">Donald: <a href="http://donaldwoodson.tumblr.com"> <span class="blog-name">{{d_title}}</span></a>, <span class="date">{{d_date}}</span></li>
+
+	<li class="blog">Kevin: <a href="http://www.ktizzel.com/blog"><span class="blog-name">{{k_title}}</span></a>, <span class="date">{{k_date}}</span></li>
+		
+	<li class="blog">Jonathan:<a href="http://jchang.me/posts.html"> <span class="blog-name">{{j_title}}</span></a>, <span class="date">{{j_date}}</span></li>
 	
-	<li class="blog">Steven: <span class="blog-name">{{s_title}}</span>, <span class="date">{{s_date}}</span></li>	
 	
-	<li class="blog">Franklin: <span class="blog-name">{{f_title}}</span>, <span class="date">{{f_date}}</span></li>
+	<li class="blog">Franklin: <a href="http://www.frankjwu.com"> <span class="blog-name">{{f_title}}</span></a>, <span class="date">{{f_date}}</span></li>
+
+	<li class="blog">Steven: <a href="https://kangexpress.wordpress.com"><span class="blog-name">{{s_title}}</span></a>, <span class="date">{{s_date}}</span></li>	
 	
-	<li class="blog">Donald: Not available cuz he's a scrub</li>
+	
 	<li class="blog">Thomas: Not available cuz he's a scrub</li>
 	<li class="blog">Koop: Not available cuz he's a scrub</li>
 	<li class="blog">Pat: Not available cuz he's a scrub</li>
