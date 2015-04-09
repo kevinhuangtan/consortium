@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 from bs4 import BeautifulSoup 
 import urllib2
+import schedule
+import time
 
 app = Flask(__name__)
 app.debug = True
@@ -67,6 +69,17 @@ def hello_world():
 
 
 	return render_template('consortium.html', f_title = f_title, f_date = f_date, j_title = j_title, j_date =j_date, k_title =k_title, k_date = k_date, s_title=s_title, s_date=s_date, d_title = d_title, d_date = d_date, p_title = p_title, p_date = p_date)
+
+def schedule_this():
+
+	# schedule.every(10).minutes.do(job)
+	schedule.every().hour.do(job)
+
+	while True:
+	    schedule.run_pending()
+	    time.sleep(1)
+
+
 
 if __name__ == '__main__':
     app.run()

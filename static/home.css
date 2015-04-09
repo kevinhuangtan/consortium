@@ -16,6 +16,11 @@ body{
 	font-size: 20px;
 	color:white;
 }
+a{
+	opacity: 1;
+	color:white;
+
+}
 
 .title h1{
 	margin: 0;
@@ -23,6 +28,13 @@ body{
 .title p{
 	margin: 0;
 	font-variant: small-caps;
+}
+.quote{
+	width: 40em;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	font-size: .7em;
 }
 .main{
 	z-index: 1;
@@ -153,9 +165,11 @@ body{
 	width: 50%;
 	margin-left: 30%;
 	text-align: left;
+	
 }
 .blog{
 	margin: .5em;
+
 }
 .blog-name{
 	color:white;
@@ -175,7 +189,6 @@ body{
 }
 
 .bear-image{
-
 	height: 11em;
 	width: 10em;
 	background-size: 10em;
@@ -186,4 +199,12 @@ body{
 .twitter{
 	height: 10em;
 	width: 5em;
+}
+.sky{
+	background: url('clouds.jpg');
+	background-size: 1800px;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow:none;
+	height: 20em;
 }
