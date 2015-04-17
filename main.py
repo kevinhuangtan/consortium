@@ -17,15 +17,18 @@ def hello_world():
 	p_title = soup.findAll('h1')[1].a.string
 	p_date = soup.findAll('time')[0].string
 	# print d_title
-	print p_date
+	# print p_date
 
 	#Donald
 	req = urllib2.Request('http://donaldwoodson.tumblr.com', headers={'User-Agent' : "Magic Browser"}) 
 	con = urllib2.urlopen( req )
 	soup=BeautifulSoup(con.read())
-	d_title = soup.findAll('h2')[0].a.string
+	# print soup.findAll('h2')[0]
+	d_title = soup.findAll('h2')[0].string
 	d_title = d_title[2:]
-	d_date = soup.findAll("div", { "class" : "column left" })[1].a.string
+	d_date = soup.findAll("li", { "class" : "date" })[0].a.text
+	print d_date
+	# d_date = soup.findAll('span')[5]
 	# print d_title
 
 	# steven
