@@ -93,7 +93,7 @@ def initialize():
     apsched = Scheduler()
     apsched.start()
 
-    apsched.add_interval_job(job, seconds=10)
+    apsched.add_interval_job(job, seconds=3600)
     #43200
 
 @app.route('/')
