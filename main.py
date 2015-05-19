@@ -78,9 +78,9 @@ def job():
 		con = urllib2.urlopen( req )
 		soup=BeautifulSoup(con.read())
 
-		blogs['k_date'] = soup.find_all("p")[-1].string
-		if (len(soup.find_all("div")[-2].find_all("h1"))>0):
-			blogs['k_title'] = soup.find_all("div")[-2].find_all("h1")[-1].string
+		blogs['k_date'] = soup.find_all("p")[-3].string
+		if (len(soup.find_all("div")[-4].find_all("h1"))>0):
+			blogs['k_title'] = soup.find_all("div")[-4].find_all("h1")[-1].string
 		else:
 			blogs['k_title'] = ""
 		# print kt_title
@@ -93,7 +93,7 @@ def initialize():
     apsched = Scheduler()
     apsched.start()
 
-    apsched.add_interval_job(job, seconds=3600)
+    apsched.add_interval_job(job, seconds=10)
     #43200
 
 @app.route('/')
