@@ -75,3 +75,19 @@ a:active {color:#0000FF;}
 	top: 100px;
 	width: 100px;
 }
+#sunapee{
+	height: 400px;
+	margin-left: 5px;
+}
+#about{
+	width: 400px;
+	color:rgb(62, 230, 53);
+	text-align:left;
+	padding-left: 20px;
+	position: absolute;
+	padding-top: 100px;
+	/*text-decoration: underline;*/
+	text-shadow: 3px 3px rgb(224, 93, 93);
+	-webkit-text-stroke-width: 1px;
+/*-webkit-text-stroke-color: rgb(128, 185, 118);*/
+}
