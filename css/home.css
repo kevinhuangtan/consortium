@@ -1,11 +1,77 @@
 body{
-	margin : 20px;
-	background-color: rgb(180, 180, 180);
+	background-color: rgb(0,0,0);
+	background-image: url("../images/cloud.jpg");
+	background-size: 300px;
+	text-align:center;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+#main{
+	padding-top: 20px;
+		width: 800px;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		background-color: rgb(180, 180, 180);
+		height: 2000px;
+		text-align:center;
 }
 h1{
 	text-align: center;
-
 }
-h3{
+#logo{
+	height: 120px;
+	box-shadow: 10px 10px 5px #888888;
+}
+#description{
+	/*display: inline-block;*/
+	/*text-align:center;*/
+	/*height: 200px;*/
+}
+
+#description a:hover{
+	color:#042FF3!important;
+}
+#container{
+	width: 500px;
+	padding-left: 100px;
+}
+
+ul{
+	text-align:left!important;
+	width: 500px;
+	height: 180px;
+	list-style-type: disc;
+	-webkit-column-count: 2;
+   -moz-column-count: 2;
+        column-count: 2;
+	list-style-position: inside;
+}
+li h3{
+	margin: 5px;
+}
+li p{
 	margin: 0;
+	margin-left: 20px;
+	color:#042FF3;
+	font-size: 12px;
+}
+
+a:visited {color:#042FF3;}  /* visited link */
+a:hover {color:#FF00FF;}  /* mouse over link */
+a:active {color:#0000FF;}
+
+#ad{
+	position: fixed;
+	bottom: 10px;
+}
+#ad img{
+	height: 230px;
+}
+#banner-right{
+	position:absolute;
+	right: 0;
+	top: 100px;
+	width: 100px;
 }

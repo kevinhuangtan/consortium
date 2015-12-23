@@ -1,34 +1,74 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Consortium</title>
+  <html>
+    <head>
+      <title>Consortium</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <link href="css/home.css"rel="stylesheet" media="screen">
+      <script>
+        $(document).ready(function(){
+          var windowWidth = $(window).width() - $("#ad").width();
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <link href="css/home.css"rel="stylesheet" media="screen">
-    <script>
-    </script>
-  </head>
+          $(function () {
+             function runIt() {
+                  $("#ad").animate({ "left": windowWidth}, 5000, "linear");
+                  $("#ad").animate({ "left": 0}, 5000, "linear", runIt);
+             }
 
-  <body>
-    <h1 >Consortium</h1>
-    <input placeholder="search" type="text"/>
+             runIt();
+          });
 
-    <ul>
-      <li>
-        <h3><a href="ktizzel.com">Kevin's web page</a></h3>
-      </li>
-      <li>
-        <h3><a href="ktizzel.com">Jonathan's web page</a></h3>
-      </li>
-      <li>
-        <h3><a href="ktizzel.com">Frank's web page</a></h3>
-      </li>
-      <li>
-        <h3><a href="ktizzel.com">Mike's web page</a></h3>
-      </li>
-    </ul>
-  </body>
+        })
+      </script>
+    </head>
+    <body>
+      <div id="main">
+        <img id="logo" src="./images/consoryahoo.png"/>
+        <p id="description">
+          <a href="#">The Greatest Minds Ever Assembled!</a>
+          <img src="./images/spinningearth.gif"/>
+        </p>
 
-</html>
+        <div id="container">
+          <ul>
+            <li>
+              <h3><a href="http://ktizzel.com">Kevin's web page</a></h3>
+              <p>
+                Artist by Day. Artist by Night.
+              </p>
+            </li>
+            <li>
+              <h3><a href="http://jchang.me">Jonathan's web page</a></h3>
+              <p>I love traveling, art, the color orange, Carleen, museums, reading
+                books, UCW, my suitemates, and the Consortium.
+              </p>
+            </li>
+            <li>
+              <h3><a href="http://frankjwu.com">Frank's web page</a></h3>
+              <p>
+                I'm Frank Wu. I love to learn, tinker, and create beautiful things.
+              </p>
+            </li>
+            <li>
+              <h3><a href="http://mikewuis.me">Mike's web page</a></h3>
+              <p>
+                I'm Mike Wu!
+              </p>
+            </li>
+            <li>
+              <h3><a href="http://donaldwoodson.tumblr.com/">Donald's web page</a></h3>
+              <p>
+                Sometimes I'll just write about things that I see.
+              </p>
+            </li>
+          </ul>
+
+        </div>
+        <div id="ad">
+          <a href="http://www.kinggeorgeministorage.com/"><img src="./images/king.png"/></a><br>
+          <a href="http://www.kinggeorgeministorage.com/">Brought to you by King George Storage</a>
+        </div>
+      </div>
+    </body>
+  </html>
