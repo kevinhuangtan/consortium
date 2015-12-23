@@ -1,111 +1,11 @@
 body{
-	font-family: 
-	font-family: 'Crimson Text', serif;
-	background-image: url('../images/wires.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	margin: 0;
-	overflow-x: hidden;
+	margin : 20px;
+	background-color: rgb(180, 180, 180);
 }
-#dim{
-	position: fixed;
-	background-color: rgba(0,0,0,.25);
-	width: 100%;
-	height: 100%;
-	z-index: -10;
-	display: none;
-}
-.info{
-	display: inline-block;
-	position: fixed;
-}
-a{
-	text-decoration: none;
-	color:black;
-	transition: opacity .5s;
-}
-a:hover{
-	opacity: .5;
-}
-
-
-#name{
-	margin-left: 50px;
-}
-#about{
-	/*font-family: 'Open Sans', sans-serif;*/
-	right: 250px;
-
-}
-#contact{
-	/*font-family: 'Open Sans', sans-serif;*/
-	right: 60px;
-}
-#project-container{
-	padding-top: 100px;
-}
-.project{
+h1{
 	text-align: center;
-	margin-bottom: 50px;
-}
 
-.project img{
-	width: 600px;
-	float: left;
 }
-.slideshow-first{
-	cursor: pointer;
-}
-.image-container{
-	height: 461px;
-	
-}
-
-.image-container-container{
-	overflow: hidden;
-}
-
-.project-title{
-	margin: 0 auto;
-	left: 0;
-	right:0;
-	width: 600px;
-	position: absolute;
-	display: block;
-	text-align: left;
-	padding-top: 15px;
-	text-decoration: underline;
-	cursor: pointer;
-}
-.project-description{
-	margin: 0 auto;
-	width: 600px;
-	display: block;
-	text-align: left;
-	display: none;
-}
-.slideshow{
-	display: none;
-	margin-left: 50px;
-}
-#playbook-width{
-	width: 2650px;
-}
-#bas-relief-width{
-	width: 1900px;
-}
-#kitofparts-width{
-	width: 1300px;
-}
-.about-text{
-	width: 570px;
-	margin: 0 auto;
-	padding-top: 150px;
-	line-height: 25px;
-}
-.contact-text{
-	width: 300px;
-	margin: 0 auto;
-	padding-top: 150px;
-	line-height: 25px;
+h3{
+	margin: 0;
 }
