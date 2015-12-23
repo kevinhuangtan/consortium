@@ -1,7 +1,7 @@
 body{
 	background-color: rgb(0,0,0);
 	background-image: url("../images/cloud.jpg");
-	background-size: 300px;
+	background-size: 200px;
 	text-align:center;
 	padding: 0;
 	margin: 0;
@@ -67,7 +67,7 @@ a:active {color:#0000FF;}
 	bottom: 10px;
 }
 #ad img{
-	height: 230px;
+	height: 200px;
 }
 #banner-right{
 	position:absolute;
